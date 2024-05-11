@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Klee+One&display=swap');
+*{
+    background-color:black;
+    font-family: Klee One,sans-serif;
+    
+}
+.textBox{
+    display: flex;
+    justify-content: center;
+    margin-top: 150px;
+}
+.textBox>textarea{
+    height: 120px;
+    width: 500px;
+    padding-top: 20px;
+    padding-left: 25px;
+    color: black;
+    font-size: 14px;
+    background-color: white;
+    border: none;
+    border-radius: 5px;
+}
+textarea:focus{
+    outline: none;
+}
+div>button{
+   margin-top: 30px;
+   position: absolute;
+   right: 350px;
+   background-color: rgb(255, 0, 191);
+   padding: 5px 20px 5px 20px;
+   border: none;
+   border-radius: 3px;
+   transition: transform 0.3s linear;
+   font: bold;
+   font-size: 15px;
+  
+}
+
+div > button:hover {
+    transform: scale(1.1); 
+    cursor: pointer;
+ }
+.mention-dropdown{
+    position: absolute;
+    border: 1px solid black;
+    margin-top: 40px;
+    height: 100px;
+    width:200px;
+    overflow-y:scroll; 
+    background-color: white;
+    color: black;
+    font-size: 14px;
+}
+.mention-dropdown>input,ul,li{
+    background-color: white;
+    
+}
+.mention-dropdown>input{
+    border: none;
+    border-bottom: 1px solid black;
+    padding-top: 10px;
+    padding-bottom: 6px;
+}
+.mention-dropdown>input:focus{
+    outline: none;
+}
+
+.mention-dropdown>ul{
+    list-style-type: none;
+    padding: 0;
+}
+
+.mention-dropdown>ul>li {
+    padding-left: 30px; 
+    margin-bottom: 15px; 
+    position: relative; 
+    line-height: 1.5; 
+  }
+  .mention-dropdown>ul>li:hover{
+    cursor: pointer;
+  }
+.mention-dropdown>ul>li::before {
+    content: attr(data-initial); 
+  display: inline-block; 
+  width: 30px; 
+  height: 30px; 
+  background-color: #3f51b5; 
+  color: #ffffff; 
+  text-align: center;
+  line-height: 30px; 
+  font-size: 18px; 
+  border-radius: 50%;
+  position: absolute; 
+  left: 10px; 
+  top: 50%; 
+  transform: translateY(-50%); 
+  }
+  .mention-dropdown>ul > li[data-initial='A']::before {
+    background-color: #85ff22; 
+  }
+  .mention-dropdown>ul > li[data-initial='B']::before {
+    background-color: #22ffe9; 
+  }
+  .mention-dropdown>ul > li[data-initial='C']::before {
+    background-color: #ff5722; 
+  }
+  .mention-dropdown>ul > li[data-initial='E']::before {
+    background-color: #2282ff; 
+  }
+  .mention-dropdown>ul > li[data-initial='F']::before {
+    background-color: #ba0303; 
+  }
+  .mention-dropdown>ul > li[data-initial='H']::before {
+    background-color: #1737d6; 
+  }
+  .mention-dropdown>ul > li[data-initial='J']::before {
+    background-color: #c422ff; 
+  }
+  .mention-dropdown>ul > li[data-initial='K']::before {
+    background-color: #241c62; 
+  }
+  .mention-dropdown>ul > li[data-initial='L']::before {
+    background-color: #ff2222; 
+  }
+  .mention-dropdown>ul > li[data-initial='N']::before {
+    background-color: #47ff22; 
+  }
+  .mention-dropdown>ul > li[data-initial='D']::before {
+    background-color: #801ad3; 
+  }
+  .mention-dropdown>ul > li[data-initial='P']::before {
+    background-color: #00ff1a; 
+  }
+  .mention-dropdown>ul > li[data-initial='Q']::before {
+    background-color: #f90000; 
+  }
+  .mention-dropdown>ul > li[data-initial='S']::before {
+    background-color: #00c8df; 
+  }
+  .mention-dropdown>ul > li[data-initial='T']::before {
+    background-color: #9400f7; 
+  }
+  .mention-dropdown>ul > li[data-initial='V']::before {
+    background-color: #1000f3; 
+  }
+  .mention-dropdown>ul > li[data-initial='Y']::before {
+    background-color: #00f7f3; 
+  }
+
+  .posted-message{
+    
+    border-radius: 5px;
+    background-color: white;
+    margin-top: 100px;
+    color:white;
+    height: 120px;
+    width: 500px;
+    position: relative;
+    left: 344px;
+    padding-top: 20px;
+    text-align: start;
+    padding-bottom: 50px;
+    padding-left: 20px;
+  }
+  .posted-message>.sender{
+   background-color: white;
+   color: black;
+   width: 40px;
+   height: 40px;
+   border-radius: 50%;
+   background-color: #801ad3;
+   font-size: 15px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   color: white;
+  }
+  .posted-message>.message{
+    font-size: 14px;
+    background-color: white;
+    color: black;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+   }
+   .posted-message>.time{
+    background-color: white;
+    color: black;
+    margin-left: 80%;
+   }
+  .user-status{
+    color:white;
+  }
