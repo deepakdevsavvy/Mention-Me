@@ -8,6 +8,7 @@
     display: flex;
     justify-content: center;
     margin-top: 150px;
+    z-index: 2;
 }
 .textBox>textarea{
     height: 120px;
@@ -26,7 +27,7 @@ textarea:focus{
 div>button{
    margin-top: 30px;
    position: absolute;
-   right: 350px;
+   right:360px;
    background-color: rgb(255, 0, 191);
    padding: 5px 20px 5px 20px;
    border: none;
@@ -34,7 +35,7 @@ div>button{
    transition: transform 0.3s linear;
    font: bold;
    font-size: 15px;
-  
+  z-index: 2;
 }
 
 div > button:hover {
@@ -156,8 +157,6 @@ div > button:hover {
     color:white;
     height: 120px;
     width: 500px;
-    position: relative;
-    left: 344px;
     padding-top: 20px;
     text-align: start;
     padding-bottom: 50px;
@@ -191,3 +190,22 @@ div > button:hover {
   .user-status{
     color:white;
   }
+
+  .result{
+    display: grid;
+    place-items: center;
+  }
+  @media screen and (max-width:768px) {
+    .posted-message{
+      height: 120px;
+      width: 400px;
+  }
+  .textBox>textarea{
+    height: 120px;
+    width: 400px;}
+    div>button{
+    position: static;
+    margin: 20px auto;
+    display:block;
+    }
+}
